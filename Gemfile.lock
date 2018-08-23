@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     activemodel (5.2.1)
       activesupport (= 5.2.1)
@@ -21,6 +21,7 @@ GEM
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
     mustermann (1.0.3)
+    pg (1.0.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -46,9 +47,13 @@ DEPENDENCIES
   activerecord
   bcrypt
   faker
+  pg
   rake
   sinatra-activerecord
   sqlite3
+
+RUBY VERSION
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.3
