@@ -2,8 +2,8 @@ require 'sinatra'
 require 'sinatra/activerecord'
 enable :sessions
 
-set :database, "sqlite3:project-name.sqlite3"
-# ActiveRecord::Base.establish_connection(ENV['DATABSE_URL'])
+# set :database, "sqlite3:project-name.sqlite3"
+ActiveRecord::Base.establish_connection(ENV['DATABSE_URL'])
 
 get '/' do
    p 'we did it!'
