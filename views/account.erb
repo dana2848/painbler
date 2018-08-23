@@ -1,0 +1,25 @@
+
+<h2>YOUR ACCOUNT</h2>
+<% if session[:user] == nil %>
+  <p> No one is logged in </p>
+  <% elsif session[:user] != nil %>
+   <p>Welcome back, <%= session[:user].name %> <p>
+<% end %>
+<div class="account-table">
+
+
+  <form method="POST" action="/account">
+    <p>message:
+    <input type="text" name="body">
+  </p>
+  <p>title:
+  <input type="text" name="title">
+  </p>
+  </form>
+<a href='/deleteaccount'>delete account</a>
+<hr>
+<% Post.all.reverse.each do |q| %>
+<%= q.title %>
+<%= q.body %>
+<hr>
+<%end %>

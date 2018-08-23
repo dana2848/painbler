@@ -1,0 +1,8 @@
+<br><input type='email' name="email" placeholder=><br>
+<br><input type='password' name="password" value=@user.password><br>
+<br><input type="password" name="" placeholder=@user.password.update><br>
+<br><input type="password" name="" placeholder=@user.password><br>
+
+  <input type="submit" name="" value="save"><br>
+  <input type="submit" name="" value="delete your account"><br></form>
+  <a href="/post_form"><input type="submit" name="post" value="post"></a>
